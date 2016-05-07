@@ -1,4 +1,3 @@
-import flexslider from '/node_modules/flexslider';
 
 Template.hero.onRendered(function() {
   $('#home-slider img').each(function(index, el) {

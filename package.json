@@ -6,8 +6,6 @@
   },
   "dependencies": {
     "countup": "^1.6.2",
-    "jquery-count-to": "^1.2.1",
     "meteor-node-stubs": "~0.2.0",
-    "parallax.js": "^0.1.0"
   }
 }
