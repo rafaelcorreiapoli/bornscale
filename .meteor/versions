@@ -58,6 +58,7 @@ mrt:normalize.css@2.0.1
 natestrauser:animate-css@3.5.1
 npm-mongo@1.4.43
 observe-sequence@1.0.11
+okgrow:router-autoscroll@0.1.8
 ordered-dict@1.0.7
 poetic:jquery.appear@0.0.6
 promise@0.6.7

@@ -104,10 +104,7 @@ Template.header.onRendered(function() {
     $('section.parallax').css('z-index', 20);
   }
 
-  $('.parallax-bg').parallax({
-    speed: 0.5,
-    zIndex: parallaxZIndex
-  });
+
 
   $('#login-tabs a:first').tab('show');
 

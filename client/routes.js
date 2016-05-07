@@ -4,14 +4,26 @@ FlowRouter.route('/', {
   }
 })
 
-FlowRouter.route('/ehs', {
+FlowRouter.route('/portfolio/ehs', {
   action() {
     BlazeLayout.render('layout', {main: 'ehs'});
   }
 })
 
-FlowRouter.route('/ehs', {
+FlowRouter.route('/portfolio/siga-livre', {
   action() {
-    BlazeLayout.render('layout', {main: 'ehs'});
+    BlazeLayout.render('layout', {main: 'sigaLivre'});
+  }
+})
+
+FlowRouter.route('/portfolio/shact', {
+  action() {
+    BlazeLayout.render('layout', {main: 'shact'});
+  }
+})
+
+FlowRouter.route('/portfolio/praxi-level', {
+  action() {
+    BlazeLayout.render('layout', {main: 'praxiLevel'});
   }
 })
