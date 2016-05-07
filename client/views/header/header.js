@@ -9,7 +9,6 @@ Template.header.onRendered(function() {
   }
 
   $(window).scroll(function() {
-
     if ($('section:first').is('.parallax, #home, .splash')) {
       if ($(window).scrollTop() >= 100) {
         $('#topnav').addClass('scroll');
