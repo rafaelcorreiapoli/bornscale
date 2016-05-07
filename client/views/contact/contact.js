@@ -177,7 +177,19 @@ Template.contact.onRendered(function() {
     });
 
     if (isValidForm()) {
-      console.log('send form!');
+      Meteor.call('sendEmail', {
+        name: $('input[name="fullname"]').val(),
+        email:$('input[name="email"]').val(),
+        budget:$('input[name="budget"]').val(),
+        overview:$('textarea[name="overview"]').val()
+      }, function(err, res){
+        if (err) {
+          // Show error message
+        }else {
+          // Reset form
+          // Sow success message
+        }
+      });
     }
 
   });
