@@ -1,3 +1,29 @@
+Template.contact.onCreated(function() {
+  this.formState = new ReactiveVar('');
+
+  this.autorun(() => {
+    if (this.formState.get() != '') {
+      setTimeout(() => {
+        $('.alert').addClass('animated fadeOut');
+        setTimeout(() => {
+          this.formState.set('');
+        }, 500)
+      }, 3000);
+    }
+  })
+});
+
+Template.contact.helpers({
+  successSending() {
+    return Template.instance().formState.get() === 'success'
+  },
+  errorSending() {
+    return Template.instance().formState.get() === 'error'
+  },
+  loading() {
+    return Template.instance().formState.get() === 'loading'
+  }   
+});
 Template.contact.onRendered(function() {
   var lat = $('#map').data('lat');
   var lang = $('#map').data('lang');
@@ -164,6 +190,8 @@ Template.contact.onRendered(function() {
     return toReturn;
   }
 
+  let self = this;
+
   $('#contact-form').on('submit', function(event) {
 
     event.preventDefault();
@@ -176,7 +204,9 @@ Template.contact.onRendered(function() {
       }
     });
 
+    
     if (isValidForm()) {
+      self.formState.set('loading');
       Meteor.call('sendEmail', {
         name: $('input[name="fullname"]').val(),
         email:$('input[name="email"]').val(),
@@ -184,10 +214,14 @@ Template.contact.onRendered(function() {
         overview:$('textarea[name="overview"]').val()
       }, function(err, res){
         if (err) {
-          // Show error message
+          self.formState.set('error');
         }else {
           // Reset form
-          // Sow success message
+          $('input[name="fullname"]').val('');
+          $('input[name="email"]').val('');
+          $('input[name="budget"]').val('');
+          $('textarea[name="overview"]').val('');
+          self.formState.set('success');
         }
       });
     }

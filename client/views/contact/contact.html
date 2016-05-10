@@ -32,7 +32,24 @@
                 <div class="form-group">
                   <textarea name="overview" placeholder="High-level overview of the project or idea" data-required="true" class="form-control" rows="6"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group text-center">
+                  {{#if errorSending}}
+                  <div role="alert" class="alert alert-danger alert-outline">
+                    There was an error. Try again later.
+                  </div>            
+                  {{/if}}    
+
+                  {{#if successSending}}
+                  <div role="alert" class="alert alert-success alert-outline">
+                    Thanks! we will reply your email as soon as possible!
+                  </div>            
+                  {{/if}}
+
+                  {{#if loading}}
+                    <div role="alert" class="alert alert-warning alert-outline">
+                      Loading...
+                    </div>            
+                  {{/if}}
                   <button type="submit" class="btn btn-color">Send Message</button>
                 </div>
               </form>
