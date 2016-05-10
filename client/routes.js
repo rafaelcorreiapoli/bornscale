@@ -27,3 +27,13 @@ FlowRouter.route('/portfolio/praxi-level', {
     BlazeLayout.render('layout', {main: 'praxiLevel'});
   }
 })
+FlowRouter.route('/portfolio/techdb', {
+  action() {
+    BlazeLayout.render('layout', {main: 'praxiLevel'});
+  }
+})
+FlowRouter.route('/portfolio/liontax-calendar', {
+  action() {
+    BlazeLayout.render('layout', {main: 'praxiLevel'});
+  }
+})
