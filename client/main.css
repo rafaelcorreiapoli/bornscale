@@ -4909,6 +4909,6 @@ a, a:active, a:focus {
 outline: none !important;
 }
 
-.step-box {
-  height: 540px;
+.number-box p {
+  height: 42px;
 }
