@@ -4905,6 +4905,27 @@ footer.dark p {
   height: 150px;
 }
 
+img.client-image:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
+
+img.client-image {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
+
+
 .wow {
    visibility: hidden;
 }
