@@ -4,3 +4,8 @@ Template.ehs.onRendered(function() {
     zIndex: -100
   });  
 });
+Template.ehs.onCreated(function() {
+  $('html,body').animate({
+    scrollTop: 0
+  }, 200);  
+});

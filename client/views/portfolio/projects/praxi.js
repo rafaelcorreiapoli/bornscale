@@ -3,4 +3,7 @@ Template.praxiLevel.onRendered(function() {
     speed: 0.5,
     zIndex: -100
   });  
+  $('html,body').animate({
+    scrollTop: 0
+  }, 200);  
 });

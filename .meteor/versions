@@ -41,6 +41,7 @@ jquery-waypoints@1.0.8
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
 launch-screen@1.0.11
+less@2.6.0
 livedata@1.0.18
 logging@1.0.12
 meteor@1.1.14
@@ -59,7 +60,6 @@ mrt:normalize.css@2.0.1
 natestrauser:animate-css@3.5.1
 npm-mongo@1.4.43
 observe-sequence@1.0.11
-okgrow:router-autoscroll@0.1.8
 ordered-dict@1.0.7
 poetic:jquery.appear@0.0.6
 promise@0.6.7
