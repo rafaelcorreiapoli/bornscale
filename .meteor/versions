@@ -56,6 +56,7 @@ mongo-id@1.0.4
 mrt:modernizr-meteor@2.6.2
 mrt:normalize.css@2.0.1
 natestrauser:animate-css@3.5.1
+natestrauser:jquery-scrollto@1.4.7
 npm-mongo@1.4.43
 observe-sequence@1.0.11
 okgrow:router-autoscroll@0.1.8

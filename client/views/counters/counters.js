@@ -1,4 +1,4 @@
-import CountUp from '/node_modules/countup';
+/*import CountUp from '/node_modules/countup';
 
 Template.counters.onRendered(function() {
   $('#counters').waypoint(function() {
@@ -14,3 +14,4 @@ Template.counters.onRendered(function() {
     offset: 'bottom-in-view',
   })
 });
+*/
